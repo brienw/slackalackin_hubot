@@ -1,0 +1,6 @@
+#!/bin/sh
+# Used to perform additional setup of the shell environment before launching the supplied command.
+
+export REDIS_URL=redis://redis:${REDIS_PORT_6379_TCP_PORT}/
+
+exec "$@"
