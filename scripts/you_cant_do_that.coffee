@@ -23,6 +23,6 @@ slime = [
 ]
 
 module.exports = (robot) ->
-  regex = /^(i don't know)$/i
+  regex = /^(i don['’]t know)$/i
   robot.hear regex, (msg) ->
     msg.send msg.random slime
